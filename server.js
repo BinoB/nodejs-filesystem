@@ -3,7 +3,7 @@ const path = require('path');
 const express = require('express');
 
 const app = express();
-const folderPath = '/home/cyber/GUVI Tasks/Nodejs Day-1/NodeJSFileSystem'; // actual folder path
+const folderPath = './'; // actual folder path
 
 // to create a text file with the current timestamp
 app.post('/create-file', (req, res) => {
@@ -38,7 +38,7 @@ app.get('/get-files', (req, res) => {
 
 // Start the server
 app.listen(5000, () => {
-  console.log('Server started on port 3000');
+  console.log('Server started on port 5000');
 });
 
 
